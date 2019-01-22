@@ -377,6 +377,14 @@
   version = "v3.1.2"
 
 [[projects]]
+  digest = "1:97df918963298c287643883209a2c3f642e6593379f97ab400c2a2e219ab647d"
+  name = "github.com/golang/protobuf"
+  packages = ["proto"]
+  pruneopts = "UT"
+  revision = "aa810b61a9c79d51363740d207bb46cf8e620ed5"
+  version = "v1.2.0"
+
+[[projects]]
   digest = "1:c79fb010be38a59d657c48c6ba1d003a8aa651fa56b579d959d74573b7dff8e1"
   name = "github.com/gorilla/context"
   packages = ["."]
@@ -495,6 +503,18 @@
   pruneopts = "UT"
   revision = "e6789dc391e3308d92d2f9131990b7426e5e3066"
   version = "v1.0.2"
+
+[[projects]]
+  digest = "1:690ebf13351ae302861092f82e4086bdf5a32520ee5a30355401f93138b0659c"
+  name = "github.com/markbates/goth"
+  packages = [
+    ".",
+    "gothic",
+    "providers/github",
+  ]
+  pruneopts = "UT"
+  revision = "157987f620ff2fc5e1f6a1427a3685219fbf6ff4"
+  version = "v1.49.0"
 
 [[projects]]
   digest = "1:fecb0ae22407090e8cceb1b108d1f44576420f8450213c0f18416745d80504eb"
@@ -771,14 +791,27 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:1a1ecfa7b54ca3f7a0115ab5c578d7d6a5d8b605839c549e80260468c42f8be7"
+  digest = "1:1aadc7deb82ea4a4bd147b67edcd602f6d39243b2804dc55bf78740ac9356cd6"
   name = "golang.org/x/net"
   packages = [
+    "context",
+    "context/ctxhttp",
     "html",
     "html/atom",
   ]
   pruneopts = "UT"
   revision = "1e06a53dbb7e2ed46e91183f219db23c6943c532"
+
+[[projects]]
+  branch = "master"
+  digest = "1:5276e08fe6a1dfdb65b4f46a2e5d5c9e00be6e499105e441049c3c04a0c83b36"
+  name = "golang.org/x/oauth2"
+  packages = [
+    ".",
+    "internal",
+  ]
+  pruneopts = "UT"
+  revision = "d668ce993890a79bda886613ee587a69dd5da7a6"
 
 [[projects]]
   branch = "master"
@@ -800,9 +833,18 @@
   revision = "48ac38b7c8cbedd50b1613c0fccacfc7d88dfcdf"
 
 [[projects]]
-  digest = "1:c25289f43ac4a68d88b02245742347c94f1e108c534dda442188015ff80669b3"
+  digest = "1:9e29a0ec029d012437d88da3ccccf18adcdce069cab08d462056c2c6bb006505"
   name = "google.golang.org/appengine"
-  packages = ["cloudsql"]
+  packages = [
+    "cloudsql",
+    "internal",
+    "internal/base",
+    "internal/datastore",
+    "internal/log",
+    "internal/remote_api",
+    "internal/urlfetch",
+    "urlfetch",
+  ]
   pruneopts = "UT"
   revision = "e9657d882bb81064595ca3b56cbe2546bbabf7b1"
   version = "v1.4.0"
@@ -830,6 +872,9 @@
     "github.com/gobuffalo/packr",
     "github.com/gobuffalo/pop",
     "github.com/gobuffalo/suite",
+    "github.com/markbates/goth",
+    "github.com/markbates/goth/gothic",
+    "github.com/markbates/goth/providers/github",
     "github.com/markbates/grift/grift",
     "github.com/unrolled/secure",
   ]
